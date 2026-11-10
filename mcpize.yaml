@@ -1,0 +1,16 @@
+# mcpize.yaml — MCPize deploy + pricing config.
+# Pricing is configured via the MCPize Dashboard, not only here.
+# FREE ONLY for now. No paid tier without Omar's explicit go-ahead.
+name: review-reply
+version: 1.0.0
+pricing:
+  model: tiered
+  currency: USD
+  tiers:
+    - name: free
+      price: 0
+      limits:
+        calls_per_day: 100
+        tools: [draft_review_reply, classify_review]
+    # Paid tier intentionally NOT configured. Add only with Omar's approval
+    # after free installs appear. Suggested later: pro $9/mo, unlimited.

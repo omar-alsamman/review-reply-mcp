@@ -1,0 +1,10 @@
+# smithery.yaml — Smithery listing manifest. Place in repository root.
+# No config required: this server needs no API keys or env vars.
+runtime: python
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction: |-
+    (config) => ({ command: 'python', args: ['server.py'], env: {} })
