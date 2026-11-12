@@ -1,5 +1,7 @@
 # review-reply
 
+<!-- mcp-name: io.github.omar-alsamman/review-reply -->
+
 > MCP server for drafting professional replies to local-business reviews. Exposes 2 tools to help a small business answer Google reviews quickly and consistently.
 
 Local businesses get reviews every day and answer them late, generically, or not at all. This server drafts a paste-ready reply in seconds — specific to what the reviewer actually said, never inventing discounts, staff names, refunds or promises, and always flagging 1–2 star reviews for a human to follow up.
@@ -28,6 +30,7 @@ Requires Python 3.10+.
 ```bash
 git clone https://github.com/omar-alsamman/review-reply-mcp.git
 cd review-reply-mcp
+python -m pip install --upgrade "pip>=26.2"   # pip 24.0 has 6 known CVEs (PYSEC-2026-1795, -1796, -2875, -2876, -196, -3721); 26.2+ clears them all
 pip install -r requirements.txt
 python server.py
 ```

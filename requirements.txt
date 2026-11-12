@@ -1,3 +1,6 @@
 # review-reply MCP server — $0, no API keys, no network at runtime.
 # Pin mcp <2: in mcp 2.x FastMCP was renamed to MCPServer.
+# Install with pip>=26.2 first: pip 24.0 carries 6 known CVEs
+# (PYSEC-2026-1795, -1796, -2875, -2876, -196, -3721); pip-audit is clean on 26.3.
+#   python -m pip install --upgrade "pip>=26.2"
 mcp[cli]>=1.0,<2

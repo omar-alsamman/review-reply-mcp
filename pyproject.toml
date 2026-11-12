@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "review-reply-mcp"
-version = "1.0.0"
+version = "1.0.1"
 description = "MCP server that drafts professional replies to local-business reviews. No API keys, works offline."
 readme = "README.md"
 license = { text = "MIT" }
@@ -13,6 +13,9 @@ dependencies = ["mcp>=1.0,<2"]
 
 [project.scripts]
 review-reply = "server:mcp.run"
+
+[tool.setuptools]
+py-modules = ["server"]
 
 [tool.smithery]
 server = "server:mcp"

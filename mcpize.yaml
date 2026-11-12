@@ -2,7 +2,7 @@
 # Pricing is configured via the MCPize Dashboard, not only here.
 # FREE ONLY for now. No paid tier without Omar's explicit go-ahead.
 name: review-reply
-version: 1.0.0
+version: 1.0.1
 pricing:
   model: tiered
   currency: USD
