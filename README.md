@@ -76,6 +76,11 @@ With `escalation_needed: true` and follow-up: owner/manager to contact the revie
 python test_review_reply.py   # unit tests + live MCP stdio smoke test
 ```
 
+## Security
+
+- No network calls at runtime, no API keys, no environment variables, no shell execution, no dynamic code evaluation.
+- `pip-audit` (2026-11-12, v1.0.1): no known vulnerabilities in the server or its runtime dependencies (mcp 1.30.0 tree clean). The 6 CVEs an earlier scan flagged (PYSEC-2026-1795, -1796, -2875, -2876, -196, -3721) were all in pip 24.0 itself — the installer, not a shipped dependency — and are cleared by installing with pip 26.2+ (see Installation above).
+
 ## Pricing
 
 Free. A paid tier (if ever offered) would only add bulk triage / tone presets — the free draft tool stays free. No paid tier exists today.
